@@ -57,36 +57,52 @@ export const languages: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "React Native",
-    level: "80",
+    name: "Git",
+    level: "60",
   },
   {
     Icon: BsCircleFill,
     name: "React",
     level: "70",
   },
-  {
-    Icon: BsCircleFill,
-    name: "Django",
-    level: "80",
-  },
+
   {
     Icon: BsCircleFill,
     name: "Bootstrap",
     level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Material UI",
+    level: "90",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Windev Webdev",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Redux redux  toolkit",
+    level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Jquery",
+    level: "70",
   },
 ];
 
 export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "Figma",
-    level: "85",
+    name: "MacOS lunix Windows",
+    level: "90",
   },
   {
     Icon: BsCircleFill,
     name: "Photoshop",
-    level: "45",
+    level: "65",
   },
   {
     Icon: BsCircleFill,
@@ -95,13 +111,49 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Framer",
+    name: "Vmware ",
+    level: "90",
+  },
+];
+export const networks: Skill[] = [
+
+  {
+    Icon: BsCircleFill,
+    name: " installation",
+    level: "65",
+  }, {
+    Icon: BsCircleFill,
+    name: "cabling",
+    level: "85",
+  },
+
+];
+export const database: Skill[] = [
+  {
+    Icon: BsCircleFill,
+    name: "Postgres",
+    level: "70",
+  }, {
+    Icon: BsCircleFill,
+    name: "Redis",
+    level: "60",
+  }, {
+    Icon: BsCircleFill,
+    name: "MongoDB",
     level: "45",
+  }, {
+    Icon: BsCircleFill,
+    name: "HFSQL",
+    level: "70",
+  }, , {
+    Icon: BsCircleFill,
+    name: "Spark",
+    level: "40",
   },
 ];
 
 export const projects: IProject[] = [
-  { 
+  {
     name: "COVID Tracker",
     description:
       "This app shows a statistical view about corona virus over the world",
