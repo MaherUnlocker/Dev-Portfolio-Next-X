@@ -1,5 +1,6 @@
 import Bar from "../components/Bar";
-import { languages, tools, database, networks } from "../data";
+import { Skills, languages, tools, database, networks } from "../data";
+import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
 
 const Resume = () => {
   return (
@@ -30,42 +31,50 @@ const Resume = () => {
       </div>
 
       {/*Languages & Tools */}
-      <div className="grid gap-9 md:grid-cols-2">
-        <div>
-          <h5 className="my-3 text-2xl font-bold">Language & Framework</h5>
-          <div className="my-2">
-            {languages.map((language, i) => (
-              <Bar value={language} key={i} />
-            ))}
+      <motion.div className=" carousel">
+        <motion.div drag="x" className=" inner-carousel">
+          <div className="grid gap-9 md:grid-cols-2 item">
+            <div className="itemd">
+              <h5 className="my-3 text-2xl font-bold">Language & Framework</h5>
+              <div className="my-2 card">
+                {languages.map((language, i) => (
+                  <Bar value={language} key={i} />
+                ))}
+              </div>
+            </div>
+            <div className="itemk">
+              <h5 className="my-3 text-2xl font-bold">
+                Plateforme & Softwares
+              </h5>
+              <div className="my-2">
+                {tools.map((tool, i) => (
+                  <Bar value={tool} key={i} />
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <h5 className="my-3 text-2xl font-bold">Plateforme & Softwares</h5>
-          <div className="my-2">
-            {tools.map((tool, i) => (
-              <Bar value={tool} key={i} />
-            ))}
+          <div className="grid gap-9 md:grid-cols-2 item ">
+            {/*database */}
+            <div className="itemh">
+              <h5 className="my-3 text-2xl font-bold">Database skills</h5>
+              <div className="my-2">
+                {database.map((tool, i) => (
+                  <Bar value={tool} key={i} />
+                ))}
+              </div>
+            </div>
+            {/*network */}
+            <div className="itemh">
+              <h5 className="my-3 text-2xl font-bold">Network skills</h5>
+              <div className="my-2">
+                {networks.map((tool, i) => (
+                  <Bar value={tool} key={i} />
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-        {/*database */}
-        <div>
-          <h5 className="my-3 text-2xl font-bold">Database skills</h5>
-          <div className="my-2">
-            {database.map((tool, i) => (
-              <Bar value={tool} key={i} />
-            ))}
-          </div>
-        </div>
-        {/*network */}
-        <div>
-          <h5 className="my-3 text-2xl font-bold">Network skills</h5>
-          <div className="my-2">
-            {networks.map((tool, i) => (
-              <Bar value={tool} key={i} />
-            ))}
-          </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

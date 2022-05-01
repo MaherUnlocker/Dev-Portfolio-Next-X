@@ -6,7 +6,21 @@ body {
    font-family: sans-serif;
    color: #354358;
 }
-
+.carousel {
+   cursor: grab;
+   overflow: hidden;
+   display: flex;
+}
+.inner-carousel{
+   display:grid;
+   grid-template-columns: repeat( 1fr);
+}
+.item{
+   border-radius: 2rem;
+   margin:1rem;
+   min-width: 10rem;
+   pointer-events: none;
+}
 /* //TODO put this in document */
 /* body {
    background-color: black;

@@ -253,3 +253,5 @@ export const projects: IProject[] = [
     key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
   },
 ];
+
+export const Skills = { services, languages, tools, networks, database, projects };
