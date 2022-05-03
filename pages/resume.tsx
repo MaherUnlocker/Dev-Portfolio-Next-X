@@ -32,8 +32,8 @@ const Resume = () => {
 
       {/*Languages & Tools */}
       <motion.div className=" carousel">
-        <motion.div drag="x" className=" inner-carousel">
-          <div className="grid gap-9 md:grid-cols-2 item">
+        <motion.div drag="x" className=" inner-carousel d-flex">
+          <div className="grid A gap-9 md:grid-cols-2 item">
             <div className="itemd">
               <h5 className="my-3 text-2xl font-bold">Language & Framework</h5>
               <div className="my-2 card">
@@ -53,7 +53,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div className="grid gap-9 md:grid-cols-2 item ">
+          <div className="grid B gap-9 md:grid-cols-2 item ">
             {/*database */}
             <div className="itemh">
               <h5 className="my-3 text-2xl font-bold">Database skills</h5>
